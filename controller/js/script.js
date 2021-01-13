@@ -1,3 +1,0 @@
-function buttonOnClick(){
-    // alert("Booooommmmmm!!!");
-}

@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/push.css">
+</head>
+
+<body>
+<canvas tabindex="1" id="game" width="1000" height="1000" style="border: black 1px solid;">
+        Oops! looks like your browser does not support canvas tag
+    </canvas>
+	 <audio src="./buttonClickingSound2.mp3" id="buttonSound">
+        Oops! looks like your browser does not support audio tag
+    </audio>
+    <table>
+        <tbody>
+            <tr>
+                <td>&nbsp;</td>
+                <td><button onmousedown="UpbuttonOnClick()" id ="upButton" class="button yellow round">↑</button></td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td><button onmousedown="LeftbuttonOnClick()" id="leftButton" class="button blue round">←</button></td>
+                <td>&nbsp;</td>
+                <td><button onmousedown="RightbuttonOnClick()" id="rightButton" class="button red round">→</button></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td><button onmousedown="DownbuttonOnClick()" id="downButton" class="button green round">↓</button></td>
+                <td>&nbsp;</td>
+            </tr>
+			<td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="3" align="center">
+          <label class="switch">
+            <input id="mute" onclick="muteSelection()" type="checkbox">
+            <span class="toggle"></span>
+			 <h1 id="HUD" onload="muteSelection()"></h1>
+          </label>
+        </td>
+      </tr>
+        </tbody>
+    </table>
+</body>
+<script src="./js/newscript.js"></script>
+
+</html>
