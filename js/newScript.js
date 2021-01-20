@@ -16,6 +16,7 @@ function splitFunction() {
   alert(result[1]);
 }
 
+var gamerTag = splitFunction().result[1];
 
 var playerHealth = 100;
 //Animation Stuff
@@ -260,7 +261,7 @@ function draw()
 {
     //console.log("Draw");
 
-	context.fillText("Hello " + result[1] , 600, 20);
+	context.fillText("Hello "concat(gamertag) , 600, 20);
 }
 
 function update()
