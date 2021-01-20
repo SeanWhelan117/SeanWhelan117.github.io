@@ -2,6 +2,14 @@
 var canvas = document.getElementById("game"); // canvas and context declarations
 var context = canvas.getContext("2d");
 
+//context.font = "30px Arial"
+//context.fillText = ("Hello World", 100, 100)
+
+context.font = "30px Arial";
+
+var url = document.location.href;
+
+
 var playerHealth = 100;
 //Animation Stuff
 
@@ -220,6 +228,7 @@ function drawHealthbar()
   context.fillStyle = "#00FF00";
   var fillVal = Math.min(Math.max(val / max, 0), 1);
   context.fillRect(500, 0, fillVal * width, height);
+  
 }
 
 function muteSelection() 
@@ -244,7 +253,7 @@ function draw()
 {
     //console.log("Draw");
 
-	
+	context.fillText("Hello " , 600, 20);
 }
 
 function update()
@@ -262,6 +271,7 @@ function update()
 	{
 		losing = true;
 	}
+	console.log(url);
 	
 	
 	
