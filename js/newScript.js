@@ -8,16 +8,21 @@ var context = canvas.getContext("2d");
 context.font = "30px Arial";
 
 var url = document.location.href;
+var gamerTag;
 
 function splitFunction() {
   //var str = "?gamer_tag=Phil";
   var result = url.split("="); // Splits string based on =
   //alert(result[0]);
   //alert(result[1]);
-  var gamerTag = result[1];
+  gamerTag = result[1];
 }
 
- splitFunction();
+splitFunction();
+ 
+var string1 ="Hello "
+	
+var string2 = gamerTag;
 
 var playerHealth = 100;
 //Animation Stuff
@@ -281,9 +286,6 @@ function update()
 		losing = true;
 	}
 	console.log(url);
-	var string1 ="Hello "
-	
-	var string2 = gamerTag;
 	
 	var username = string1.concat(string2);
 	
