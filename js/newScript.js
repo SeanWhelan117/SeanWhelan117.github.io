@@ -261,7 +261,7 @@ function draw()
 {
     //console.log("Draw");
 
-	context.fillText("Hello "concat(gamertag) , 600, 20);
+	context.fillText(username , 600, 20);
 }
 
 function update()
@@ -280,8 +280,11 @@ function update()
 		losing = true;
 	}
 	console.log(url);
+	var string1 ="Hello "
 	
+	var string2 = gamertag;
 	
+	var username = string1.concat(string2);
 	
 }
 
