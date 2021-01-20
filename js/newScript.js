@@ -12,8 +12,8 @@ var url = document.location.href;
 function splitFunction() {
   //var str = "?gamer_tag=Phil";
   var result = url.split("="); // Splits string based on =
-  alert(result[0]);
-  alert(result[1]);
+  //alert(result[0]);
+  //alert(result[1]);
 }
 
 var gamerTag = splitFunction().result[1];
@@ -282,7 +282,7 @@ function update()
 	console.log(url);
 	var string1 ="Hello "
 	
-	var string2 = gamertag;
+	var string2 = gamerTag;
 	
 	var username = string1.concat(string2);
 	
