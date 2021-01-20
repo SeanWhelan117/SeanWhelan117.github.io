@@ -24,6 +24,8 @@ var string1 ="Hello "
 	
 var string2 = gamerTag;
 
+var username = string1.concat(string2);
+
 var playerHealth = 100;
 //Animation Stuff
 
@@ -287,7 +289,6 @@ function update()
 	}
 	console.log(url);
 	
-	var username = string1.concat(string2);
 	
 }
 
