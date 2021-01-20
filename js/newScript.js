@@ -14,9 +14,10 @@ function splitFunction() {
   var result = url.split("="); // Splits string based on =
   //alert(result[0]);
   //alert(result[1]);
+  var gamerTag = result[1];
 }
 
-var gamerTag = splitFunction().result[1];
+ splitFunction();
 
 var playerHealth = 100;
 //Animation Stuff
