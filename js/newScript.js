@@ -9,6 +9,13 @@ context.font = "30px Arial";
 
 var url = document.location.href;
 
+function splitFunction() {
+  //var str = "?gamer_tag=Phil";
+  var result = url.split("="); // Splits string based on =
+  alert(result[0]);
+  alert(result[1]);
+}
+
 
 var playerHealth = 100;
 //Animation Stuff
@@ -253,7 +260,7 @@ function draw()
 {
     //console.log("Draw");
 
-	context.fillText("Hello " , 600, 20);
+	context.fillText("Hello " + result[1] , 600, 20);
 }
 
 function update()
