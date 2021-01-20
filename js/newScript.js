@@ -20,7 +20,7 @@ function splitFunction() {
 
 splitFunction();
  
-var string1 ="Hello "
+var string1 ="Hello ";
 	
 var string2 = gamerTag;
 
