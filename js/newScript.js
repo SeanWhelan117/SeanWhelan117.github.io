@@ -127,7 +127,8 @@ function input(event)
                 break; //Down key
 			case 83:
 				gamerInput = new GamerInput("AddScore")
-				score++;
+				//score++;
+				updateScore();
 				
 				break;
             default:
@@ -281,7 +282,7 @@ function draw()
 	
 	var scoreString = scoreOutput.concat(score);
 	
-	context.fillText(scoreString , 800, 20);
+	context.fillText(scoreString , 200, 20);
 }
 
 function update()
@@ -373,6 +374,11 @@ function animate() // animation
 		context.drawImage(loseMessage, 250, 250);
 	}
 	
+}
+
+function updateScore()
+{
+	score++;
 }
 
 //The main gameloop
