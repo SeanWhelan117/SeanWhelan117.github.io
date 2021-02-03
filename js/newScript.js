@@ -277,7 +277,11 @@ function draw()
     //console.log("Draw");
 
 	context.fillText(username , 600, 20);
-	context.fillText("Score = " score , 100, 100);
+	var scoreOutput = "Score = ";
+	
+	var scoreString = scoreOutput.concat(score);
+	
+	context.fillText(scoreString , 100, 100);
 }
 
 function update()
