@@ -93,11 +93,6 @@ function input(event)
 	{
         switch (event.keyCode) 
 		{
-			case 32:
-				gamerInput = new GamerInput("AddScore")
-				score++;
-				
-				break;
             case 37:
                 gamerInput = new GamerInput("Left");
 				
@@ -130,6 +125,11 @@ function input(event)
 				animate();
 				
                 break; //Down key
+			case 83:
+				gamerInput = new GamerInput("AddScore")
+				score++;
+				
+				break;
             default:
                 gamerInput = new GamerInput("None"); //No Input
         }
@@ -281,7 +281,7 @@ function draw()
 	
 	var scoreString = scoreOutput.concat(score);
 	
-	context.fillText(scoreString , 100, 100);
+	context.fillText(scoreString , 800, 20);
 }
 
 function update()
