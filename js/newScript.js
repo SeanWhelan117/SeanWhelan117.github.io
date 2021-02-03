@@ -55,6 +55,7 @@ var direction = 1; // direction is for the direction that the npc is moving 1 is
 var winning = false; // bool for win condition 
 var losing = false; // bool for losing condition
 var muted = false; // bool for muting the sounds of the game
+var score = 0;
 
 
 function GameObject(name, image) //function for creating game objects with a name and image 
@@ -92,6 +93,11 @@ function input(event)
 	{
         switch (event.keyCode) 
 		{
+			case 32:
+				gamerInput = new GamerInput("AddScore")
+				score++;
+				
+				break;
             case 37:
                 gamerInput = new GamerInput("Left");
 				
@@ -179,6 +185,7 @@ function RightbuttonOnClick()
 	}
 	
 }
+
 function ButtonUp()
 {
 	gamerInput = new GamerInput("None"); // null for if the button isnt being pressed / stopped being pressed
@@ -270,6 +277,7 @@ function draw()
     //console.log("Draw");
 
 	context.fillText(username , 600, 20);
+	context.fillText("Score = " score , 100, 100);
 }
 
 function update()
