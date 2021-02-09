@@ -174,6 +174,7 @@ document.getElementById("rightButton").onmouseup = function() {ButtonUp()};
 
 function UpbuttonOnClick() //fucntions for the button clicks 
 {
+	onPageLoad(); 
 	gamerInput = new GamerInput("Up");
 	if(muted === false)
 	{
