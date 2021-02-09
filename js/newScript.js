@@ -13,17 +13,18 @@ function onPageLoad()
 }
 
 function updateScore() {
+    
+    
   var current_score = localStorage.getItem('score');
-
+  console.log(current_score);
   if (isNaN(current_score)) {
-    localStorage.setItem('score', 0);
+    localStorage.setItem('score', score);
     document.getElementById("SCORE").innerHTML = " [ " + current_score + " ] ";
   } else {
     localStorage.setItem('score', parseInt(current_score) + 1);
     document.getElementById("SCORE").innerHTML = " [ " + current_score + " ] ";
   }
 
-	score = current_score;
 }
 
 //context.font = "30px Arial"
@@ -175,6 +176,7 @@ document.getElementById("rightButton").onmouseup = function() {ButtonUp()};
 function UpbuttonOnClick() //fucntions for the button clicks 
 {
 	onPageLoad(); 
+	updateScore();
 	gamerInput = new GamerInput("Up");
 	if(muted === false)
 	{
