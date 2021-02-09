@@ -40,7 +40,7 @@ var gameObj = {
     if (err != null) {
       console.error(err);
     } else {
-      var text = data["w"];
+      var text = data["Aeden"];
       console.log(text);
   
     }
