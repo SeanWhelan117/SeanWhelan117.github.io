@@ -1,3 +1,6 @@
+var canvas = document.getElementById("game"); // canvas and context declarations
+var context = canvas.getContext("2d");
+
 var score = 0;
 
 function onPageLoad() 
@@ -21,8 +24,7 @@ function updateScore() {
 
 }
 
-var canvas = document.getElementById("game"); // canvas and context declarations
-var context = canvas.getContext("2d");
+
 
 //context.font = "30px Arial"
 //context.fillText = ("Hello World", 100, 100)
