@@ -1,4 +1,25 @@
 
+function onPageLoad() 
+{
+  // Using JSON and Local Storage for
+  // GameState Management
+  
+   updateScore();
+}
+
+function updateScore() {
+  var current_score = localStorage.getItem('score');
+
+  if (isNaN(current_score)) {
+    localStorage.setItem('score', 0);
+    document.getElementById("SCORE").innerHTML = " [ " + current_score + " ] ";
+  } else {
+    localStorage.setItem('score', parseInt(current_score) + 1);
+    document.getElementById("SCORE").innerHTML = " [ " + current_score + " ] ";
+  }
+
+}
+
 var canvas = document.getElementById("game"); // canvas and context declarations
 var context = canvas.getContext("2d");
 
