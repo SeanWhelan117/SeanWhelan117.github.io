@@ -1,3 +1,4 @@
+var score = 0;
 
 function onPageLoad() 
 {
@@ -76,7 +77,7 @@ var direction = 1; // direction is for the direction that the npc is moving 1 is
 var winning = false; // bool for win condition 
 var losing = false; // bool for losing condition
 var muted = false; // bool for muting the sounds of the game
-var score = 0;
+
 
 
 function GameObject(name, image) //function for creating game objects with a name and image 
