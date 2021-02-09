@@ -3,13 +3,40 @@ var context = canvas.getContext("2d");
 
 var score = 0;
 
+var theValue = 0; 
 
-var gameObj = {
-    'Aeden': 42,
+var readJSONFromURL = function (url, callback) {
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', url, true);
+  xhr.responseType = 'json';
 
+  xhr.onload = function () {
+    var status = xhr.status;
+    if (status == 200) {
+      callback(null, xhr.response);
+    } else {
+      callback(status);
+    }
   };
 
-  // Game objects as JSON
+  xhr.send();
+};
+
+readJSONFromURL('./data/level.json', function (err, data) {
+  if (err != null) {
+    console.error(err);
+  } else {
+    theValue = data["Aeden"];
+    console.log(theValue);
+  }
+});
+
+/* var gameObj = {
+    'Aeden': 42,
+
+  }; */
+
+/*   // Game objects as JSON
   localStorage.setItem('gameObj', JSON.stringify(gameObj));
 
   // Retrieve Games object as from storage
@@ -39,10 +66,11 @@ var gameObj = {
   readJSONFromURL('./data/level.json', function (err, data) {
     if (err != null) {
       console.error(err);
-    } else {
+    } 
+	else 
+	{
       var text = data["Aeden"];
       console.log(text);
-  
     }
   });
 
@@ -58,7 +86,7 @@ var gameObj = {
   xmlhttp.open("GET", "./data/level.json", true);
   xmlhttp.send(); */
 
-  updateScore();
+  updateScore(); */
 
 function updateScore() {
     
