@@ -330,7 +330,6 @@ function update()
 		losing = true;
 	}
 	console.log(url);
-	updateScore();
 	
 }
 
@@ -403,11 +402,6 @@ function animate() // animation
 		context.drawImage(loseMessage, 250, 250);
 	}
 	
-}
-
-function updateScore()
-{
-	score++;
 }
 
 //The main gameloop
