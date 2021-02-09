@@ -14,7 +14,6 @@ function onPageLoad()
 
 function updateScore() {
     
-    
   var current_score = localStorage.getItem('score');
   console.log(current_score);
   if (isNaN(current_score)) {
@@ -331,7 +330,7 @@ function update()
 		losing = true;
 	}
 	console.log(url);
-	
+	updateScore();
 	
 }
 
