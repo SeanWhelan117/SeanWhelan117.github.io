@@ -2,6 +2,7 @@ var canvas = document.getElementById("game"); // canvas and context declarations
 var context = canvas.getContext("2d");
 
 var score = 0;
+var current_score = localStorage.getItem('score');
 
 function onPageLoad() 
 {
@@ -12,7 +13,7 @@ function onPageLoad()
 }
 
 function updateScore() {
-  var current_score = localStorage.getItem('score');
+  
 
   if (isNaN(current_score)) {
     localStorage.setItem('score', 0);
@@ -300,10 +301,12 @@ function draw()
     //console.log("Draw");
 
 	context.fillText(username , 600, 20);
-	context.fillText(score , 200, 20);
-	//var scoreOutput = "Score = ";
 	
-	//var scoreString = scoreOutput.concat(score);
+	var scoreOutput = "Score = ";
+	
+	var scoreString = scoreOutput.concat(current_score);
+	
+	context.fillText(scoreString , 200, 20);
 	
 	
 }
