@@ -29,8 +29,6 @@ readJSONFromURL('./data/level.json', function (err, data) {
     theValue = data["Aeden"];
     console.log(theValue);
 	
-	var theValueInt = data["Aeden"].parseInt();
-	console.log(theValueInt);
   }
 });
 
