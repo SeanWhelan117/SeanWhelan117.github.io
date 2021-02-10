@@ -27,7 +27,7 @@ readJSONFromURL('./data/level.json', function (err, data) {
     console.error(err);
   } else {
     theValue = data["Aeden"];
-    console.log(theValue);
+    console.log(data["Aeden"]);
   }
 });
 
@@ -91,7 +91,7 @@ var loseMessage = new Image();
 playerImage.src = "/img/pigsprite.png"; //sources are in the img folder
 NPCimage.src = "/img/cake.png";
 winMessage.src = "/img/win.png";
-loseMessage.src = "/img/lose.png"
+loseMessage.src = "/img/lose.png";
 
 var buttonSound = document.getElementById("buttonSound");
 var selectBox = document.getElementById('mute');
