@@ -1,4 +1,4 @@
-var cacheName = 'muddygames-pwa';
+var cacheName = 'SeanWhelan117-pwa';
 var filesToCache = [
   '/',
   '/index.html',
