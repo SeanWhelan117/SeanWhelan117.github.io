@@ -56,6 +56,6 @@
    "display": "minimal-ui",
    "orientation": "landscape",
    "scope": "/",
-   "start_url": "/controller.html"
+   "start_url": "/index.html"
    
 }
