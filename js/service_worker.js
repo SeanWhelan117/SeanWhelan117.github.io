@@ -3,7 +3,8 @@ var filesToCache = [
   '/',
   '/index.html',
   '/css/push.css',
-  '/js/newScript.js'
+  '/js/newScript.js',
+  'controller.html'
 ];
 
 /* Cache contents when Offline See Cache */
