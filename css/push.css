@@ -41,8 +41,6 @@
   position: relative;
   /* No line-break after the element, so the element can sit next to other elements.*/
   display: inline-block;
-  left: 200px;
-  top: -320px;
   width: 60px;
   height: 34px;
 }
