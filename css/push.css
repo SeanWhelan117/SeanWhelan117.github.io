@@ -21,6 +21,37 @@ canvas#game{
 width:90vw;
 }
 
+
+@media only screen and (max-width: 780px)
+{
+    canvas#game
+    {
+        position: absolute;
+        top:80px;
+        left:23%;
+        width: 50vw;
+        height: 50vh;
+        object-fit: contain;
+    }
+    
+    #buttonUp
+    {
+        position: absolute;
+        top: 750px;
+        left: 10px;
+        background-color: #FFC0CB;
+        border: none;
+        box-shadow: 0 9px#3CE6B0;
+        padding: 30px;
+        text-align: center;
+        font-size: 28px;
+
+
+
+    }
+}
+
+
 .green {
   color: #00FF00;
   padding: 50px;
