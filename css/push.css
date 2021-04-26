@@ -26,23 +26,23 @@ width:90vw;
   padding: 50px;
   font-size: 40px;
   
-  transform: translate(-15px, -50px);
+  transform: translate(-35px, -50px);
   
 }
 
 .red {
 color: #FF0000;
-transform: translate(-25px, -100px);
+transform: translate(-62.5px, -100px);
 }
 
 .blue {
   color: #2e99ba;
-  transform: translateY(-100px);
+  transform: translate(-10px,-100px);
 }
 
 .yellow {
   color: #FFFF00;
-  transform: translateX(10px);
+  transform: translateX(-12.5px);
 }
 
 .round {
