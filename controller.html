@@ -47,47 +47,34 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 </head>
-<h1 id="SCORE" onload="updateScore()"></h1>
-<canvas tabindex="0" id="game" width="250px" height="250px" style="border: black 1px solid;">
-        Oops! looks like your browser does not support canvas tag
+<body>
+    <canvas tabindex="0" id="game" width="2000" height="1000" style="border: black 1px solid;">
+            Oops! looks like your browser does not support canvas tag
     </canvas>
-	 <audio src="buttonClickingSound2.mp3" id="buttonSound" type="audio/mp3">
-        Oops! looks like your browser does not support audio tag
-    </audio>
     <table>
         <tbody>
             <tr>
                 <td>&nbsp;</td>
-                <td><button onmousedown="UpbuttonOnClick()" id ="upButton" class="button yellow round">↑</button></td>
+                <td><button onmousedown="UpbuttonOnClick()" id ="upButton" class="button yellow round">Melee</button></td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td><button onmousedown="LeftbuttonOnClick()" id="leftButton" class="button blue round">←</button></td>
+                <td><button onmousedown="LeftbuttonOnClick()" id="leftButton" class="button blue round">Range</button></td>
                 <td>&nbsp;</td>
-                <td><button onmousedown="RightbuttonOnClick()" id="rightButton" class="button red round">→</button></td>
+                <td><button onmousedown="RightbuttonOnClick()" id="rightButton" class="button red round">Heal</button></td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
-                <td><button onmousedown="DownbuttonOnClick()" id="downButton" class="button green round">↓</button></td>
+                <td><button onmousedown="DownbuttonOnClick()" id="downButton" class="button green round">Lock</button></td>
                 <td>&nbsp;</td>
             </tr>
-			<td>&nbsp;</td>
+            <td>&nbsp;</td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
       </tr>
-      <tr>
-        <td colspan="3" align="center">
-          <label class="switch">
-              MUTE
-            <input id="mute" onclick="muteSelection()" type="checkbox">
-            <span class="toggle"></span>
-			 <h1 id="HUD" onload="muteSelection()"></h1>
-          </label>
-        </td>
-      </tr>
-        </tbody>
+    </tbody>
     </table>
-</body>
+    </body>
 <script src="/js/register.js"></script>
 <script src="/data/level.json"></script>
 <script src="/js/newScript.js"></script>
